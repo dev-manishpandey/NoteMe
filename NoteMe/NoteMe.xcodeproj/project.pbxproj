@@ -11,6 +11,13 @@
 		A164C1C2243BC6CA00C154E6 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A164C1C1243BC6CA00C154E6 /* RootViewController.swift */; };
 		A164C1C7243BC6CB00C154E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A164C1C6243BC6CB00C154E6 /* Assets.xcassets */; };
 		A164C1CA243BC6CB00C154E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A164C1C8243BC6CB00C154E6 /* LaunchScreen.storyboard */; };
+		A164C1D7243BC9E100C154E6 /* NotesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A164C1D6243BC9E100C154E6 /* NotesListViewController.swift */; };
+		A164C1D9243BC9F000C154E6 /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A164C1D8243BC9F000C154E6 /* AddNoteViewController.swift */; };
+		A164C1DB243BCA0300C154E6 /* EditNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A164C1DA243BCA0300C154E6 /* EditNoteViewController.swift */; };
+		A164C1DD243BCAAB00C154E6 /* NotesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A164C1DC243BCAAB00C154E6 /* NotesListViewModel.swift */; };
+		A164C1DF243BCABE00C154E6 /* NoteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A164C1DE243BCABE00C154E6 /* NoteItem.swift */; };
+		A164C1E1243BCADB00C154E6 /* AddNoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A164C1E0243BCADB00C154E6 /* AddNoteViewModel.swift */; };
+		A164C1E3243BCAE900C154E6 /* EditNoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A164C1E2243BCAE900C154E6 /* EditNoteViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +27,13 @@
 		A164C1C6243BC6CB00C154E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A164C1C9243BC6CB00C154E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A164C1CB243BC6CB00C154E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A164C1D6243BC9E100C154E6 /* NotesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListViewController.swift; sourceTree = "<group>"; };
+		A164C1D8243BC9F000C154E6 /* AddNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
+		A164C1DA243BCA0300C154E6 /* EditNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNoteViewController.swift; sourceTree = "<group>"; };
+		A164C1DC243BCAAB00C154E6 /* NotesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListViewModel.swift; sourceTree = "<group>"; };
+		A164C1DE243BCABE00C154E6 /* NoteItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteItem.swift; sourceTree = "<group>"; };
+		A164C1E0243BCADB00C154E6 /* AddNoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteViewModel.swift; sourceTree = "<group>"; };
+		A164C1E2243BCAE900C154E6 /* EditNoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNoteViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +66,7 @@
 		A164C1BC243BC6CA00C154E6 /* NoteMe */ = {
 			isa = PBXGroup;
 			children = (
+				A164C1D2243BC99200C154E6 /* Modules */,
 				A164C1C1243BC6CA00C154E6 /* RootViewController.swift */,
 				A164C1D1243BC6EE00C154E6 /* Supporting Files */,
 			);
@@ -67,6 +82,44 @@
 				A164C1CB243BC6CB00C154E6 /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A164C1D2243BC99200C154E6 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				A164C1D5243BC9C700C154E6 /* Edit Note */,
+				A164C1D4243BC9BE00C154E6 /* Add Note */,
+				A164C1D3243BC9B000C154E6 /* Notes List */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		A164C1D3243BC9B000C154E6 /* Notes List */ = {
+			isa = PBXGroup;
+			children = (
+				A164C1D6243BC9E100C154E6 /* NotesListViewController.swift */,
+				A164C1DC243BCAAB00C154E6 /* NotesListViewModel.swift */,
+				A164C1DE243BCABE00C154E6 /* NoteItem.swift */,
+			);
+			path = "Notes List";
+			sourceTree = "<group>";
+		};
+		A164C1D4243BC9BE00C154E6 /* Add Note */ = {
+			isa = PBXGroup;
+			children = (
+				A164C1D8243BC9F000C154E6 /* AddNoteViewController.swift */,
+				A164C1E0243BCADB00C154E6 /* AddNoteViewModel.swift */,
+			);
+			path = "Add Note";
+			sourceTree = "<group>";
+		};
+		A164C1D5243BC9C700C154E6 /* Edit Note */ = {
+			isa = PBXGroup;
+			children = (
+				A164C1DA243BCA0300C154E6 /* EditNoteViewController.swift */,
+				A164C1E2243BCAE900C154E6 /* EditNoteViewModel.swift */,
+			);
+			path = "Edit Note";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +192,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A164C1E3243BCAE900C154E6 /* EditNoteViewModel.swift in Sources */,
+				A164C1D9243BC9F000C154E6 /* AddNoteViewController.swift in Sources */,
 				A164C1C2243BC6CA00C154E6 /* RootViewController.swift in Sources */,
+				A164C1D7243BC9E100C154E6 /* NotesListViewController.swift in Sources */,
+				A164C1DF243BCABE00C154E6 /* NoteItem.swift in Sources */,
+				A164C1E1243BCADB00C154E6 /* AddNoteViewModel.swift in Sources */,
+				A164C1DB243BCA0300C154E6 /* EditNoteViewController.swift in Sources */,
+				A164C1DD243BCAAB00C154E6 /* NotesListViewModel.swift in Sources */,
 				A164C1BE243BC6CA00C154E6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
